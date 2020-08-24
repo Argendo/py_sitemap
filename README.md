@@ -8,7 +8,7 @@
 
 # Использование:
 Установите нужные пакеты коммандой:
-"pip install -r requirements.txt --no-index"
+"pip3 install -r requirements.txt --no-index"
 
 Запустите скрипт:
 "python3 done.py"
