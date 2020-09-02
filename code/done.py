@@ -31,7 +31,7 @@ def get_links(cur_url, html):
 			# Приведение относительных ссылок к абсолютным
 			if temp_link[:1]=='/':
 				temp_link=str(str(FIRST_URL)+temp_link)
-				page_links.append(temp_link)
+				page_links.append(str(temp_link)+' '+str(temp_link.text))
 			else:
 				page_links.append(temp_link)
 	# Добавление в словарь со структурой "ключ: массив значений"
