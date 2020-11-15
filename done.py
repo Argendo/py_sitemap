@@ -138,7 +138,6 @@ def main():
 		# Дамп в json файл для удобства работы со словарём
 		with open('json_dump.txt', 'w') as json_file:
 			json.dump(DATA_DICT, json_file)
-		json_file.close()
 		con = create_connection('./result.db')
 		data = json.loads(open('./json_dump.txt').read())
 		create_table_exec(con, CREATE_TABLE_QUERY)
